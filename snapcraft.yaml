@@ -1,0 +1,20 @@
+name: go-webserver
+vendor: XiaoGuo, Liu <xiaoguo.liu@canonical.com>
+icon: go.png
+version: 1.0.7
+summary: Go webserver
+description: This is a simple go webserver. It is a service
+
+services:
+  webserver:
+    description: "Go websever"
+    start: bin/golang-http
+    caps:
+     - network-client
+     - network-service    
+         
+parts:
+  webserver:
+    plugin: go
+    source: git://github.com/liu-xiao-guo/golang-http
+
