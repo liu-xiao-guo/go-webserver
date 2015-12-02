@@ -16,5 +16,6 @@ services:
 parts:
   webserver:
     plugin: go
-    source: git://github.com/liu-xiao-guo/golang-http
+    go-packages:
+      - github.com/liu-xiao-guo/golang-http
 
